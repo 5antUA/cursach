@@ -1,0 +1,36 @@
+.company-content {
+    max-width: 800px;
+    margin: 0 auto 80px;
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.company-content p {
+    margin-bottom: 20px;
+}
+
+.company-content em {
+    color: #a6b8ff;
+    font-style: italic;
+}
+
+.company-quote {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(120, 79, 255, 0.15);
+    border-left: 5px solid #3067ff;
+    font-style: italic;
+    color: #ddd;
+    border-radius: 10px;
+}
+
+.company-quote footer {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #bbb;
+}

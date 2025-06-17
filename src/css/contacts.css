@@ -1,0 +1,103 @@
+.contacts-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contacts-info {
+    flex: 1;
+    min-width: 280px;
+    max-width: 40%;
+    color: white;
+}
+
+.contacts-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.contacts-info p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.contacts-map {
+    flex: 1;
+    min-width: 280px;
+    max-width: 60%;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* ===== Адаптив для контактної сторінки ===== */
+
+/* До 768px — планшети і мобілки */
+@media (max-width: 767.98px) {
+    .contacts-section {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contacts-info,
+    .contacts-map {
+        max-width: 100%;
+    }
+
+    .contacts-map {
+        height: 300px;
+    }
+
+    .contacts-info h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .contacts-info p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .company-logo img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* До 576px — телефони */
+@media (max-width: 575.98px) {
+    .contacts-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .contacts-info p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 20px 10px;
+    }
+
+    header {
+        padding: 8px 0;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}

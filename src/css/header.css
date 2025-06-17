@@ -1,0 +1,50 @@
+header {
+    background: white;
+    color: #2600a3;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: padding 0.3s ease;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #2600a3;
+    color: #2600a3;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px 10px;
+    transition: background 0.3s ease, color 0.3s ease, font-size 0.3s ease,
+        padding 0.3s ease, transform 0.2s ease; /* Додано */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background: #2600a3;
+    color: white;
+    outline: none;
+    transform: scale(0.95); /* Ефект стискання */
+}
+
+/* Зменшення розміру посилань при скролі */
+header.shrink .nav-link {
+    font-size: 0.9rem;
+    padding: 5px 14px;
+}
